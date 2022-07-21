@@ -1,0 +1,263 @@
+-- INSERT INFO INTO TABLES
+INSERT INTO customer(
+    first_name,
+    last_name,
+    email,
+    phone,
+    rewards_member
+) 
+VALUES(
+    'Kieren',
+    'Browne',
+    'kibrowne@ki.com',
+    '1111111111',
+    true
+),(
+    'Beatrice',
+    'Daugherty',
+    'bedaugherty@be.com',
+    '2222222222',
+    false
+),(
+    'Edward',
+    'Chavez',
+    'edchavez@ed.com',
+    '3333333333',
+    true
+),(
+    'Adelina',
+    'Robertson',
+    'adrobertson@ad.com',
+    '4444444444',
+    true
+),(
+    'Louis',
+    'Hall',
+    'louhall@lou.com',
+    '5555555555',
+    false
+),(
+    'Kory',
+    'Burns',
+    'koburns@ko.com',
+    '6666666666',
+    true
+),(
+    'Daisie',
+    'Marquez',
+    'daimarquez@dai.com',
+    '7777777777',
+    false
+),(
+    'Jax',
+    'Duke',
+    'jaxduke@jax.com',
+    '8888888888',
+    false
+),(
+    'Frank',
+    'Sinatra',
+    'frasinatra@frank.com',
+    '9999999999',
+    false
+),(
+    'Adam',
+    'Sandler',
+    'adamsandler@ad.com',
+    '0000000000',
+    true
+);
+
+INSERT INTO movies(
+    genre,
+    movie_name,
+    rating,
+    duration
+) 
+VALUES(
+    'Horror',
+    'The Conjuring',
+    'R',
+    '1hr 30min'
+),(
+    'romcom',
+    'The Lost City',
+    'PG-13',
+    '1hr 52min'
+),(
+    'scifi',
+    'Spiderhead',
+    'R',
+    '1hr 47min'
+),(
+    'animation',
+    'Spirited Away',
+    'PG',
+    '2hrs 5min'
+),(
+    'comedy',
+    'Free Guy',
+    'PG-13',
+    '1hr 55min'
+),(
+    'romance',
+    'Me Before You',
+    'PG-13',
+    '1hr 50min'
+),(
+    'action',
+    'Uncharted',
+    'PG-13',
+    '1hr 56min'
+),(
+    'thriller',
+    'Old',
+    'PG-13',
+    '1hr 48min'
+);
+
+INSERT INTO concession(
+    prod_name,
+    price
+)
+VALUES(
+    'popcorn',
+    7.00
+),(
+    'candy',
+    5.00
+),(
+    'soda',
+    3.00
+);
+
+INSERT INTO tickets(
+    movies_id,
+    price
+)
+VALUES(
+    1,
+    10.00
+),(
+    2,
+    10.00
+),(
+    3,
+    10.00
+),(
+    4,
+    10.00
+),(
+    5,
+    10.00
+),(
+    6,
+    10.00
+),(
+    7,
+    10.00
+),(
+    8,
+    10.00
+);
+
+INSERT INTO customers_order(
+    concession_id,
+    customer_id,
+    prod_name,
+    quantity
+)
+VALUES(
+    1,
+    1,
+    'popcorn',
+    1
+),(
+    2,
+    1,
+    'candy',
+    1
+),(
+    2,
+    2,
+    'candy',
+    2
+),(
+    1,
+    3,
+    'popcorn',
+    2
+),(
+    1,
+    5,
+    'popcorn',
+    1
+),(
+    1,
+    7,
+    'popcorn',
+    1
+),(
+    3,
+    7,
+    'soda',
+    1
+);
+
+INSERT INTO customers_ticket(
+    ticket_id,
+    customer_id,
+    seat_number,
+    purchase_time
+) 
+VALUES(
+    1,
+    1,
+    'F2',
+    '2:00pm'
+),(
+    1,
+    2,
+    'F3',
+    '2:00pm'
+),(
+    2,
+    3,
+    'G6',
+    '5:00pm'
+),(
+    3,
+    4,
+    'B3',
+    '8:00pm'
+),(
+    4,
+    5,
+    'C5',
+    '7:00pm'
+),(
+    5,
+    6,
+    'H2',
+    '4:30pm'
+),(
+    6,
+    7,
+    'D4',
+    '2:30pm'
+),(
+    7,
+    8,
+    'E8',
+    '3:45pm'
+),(
+    8,
+    9,
+    'F5',
+    '6:20pm'
+),(
+    8,
+    10,
+    'F6',
+    '6:20pm'
+);
